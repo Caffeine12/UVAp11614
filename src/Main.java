@@ -7,10 +7,9 @@ public class Main {
         int i=1;
         for(i=1;i<=testCaseNumber;i++)
         {
-            long sumTestNumber= sc.nextLong();
-
-            long row= (long)(Math.ceil((((Math.sqrt(1+8*sumTestNumber))/2)-1)));
-            System.out.println(row);                
-        }
+            double sumTestNumber= sc.nextLong();
+            double row= (Math.sqrt(1+8*sumTestNumber)/2)-1;
+            System.out.println(Math.round(row));                           
+        }        
     }
 }
