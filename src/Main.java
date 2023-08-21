@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 public class Main {
     public static void main(String[] args) throws Exception {
         Scanner sc=new Scanner(System.in);
@@ -6,17 +7,10 @@ public class Main {
         int i=1;
         for(i=1;i<=testCaseNumber;i++)
         {
-            long j=1,row=0;
-            long testNumber= sc.nextLong();
-            long remainder=testNumber;
-                while(remainder>row)
-                {
-                    remainder=remainder-j;
-                    row++;
-                    j++;
+            long sumTestNumber= sc.nextLong();
 
-                }
-                System.out.println(row);                
+            long row= (long)(Math.ceil((((Math.sqrt(1+8*sumTestNumber))/2)-1)));
+            System.out.println(row);                
         }
     }
 }
