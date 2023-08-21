@@ -6,9 +6,9 @@ public class Main {
         int i=1;
         for(i=1;i<=testCaseNumber;i++)
         {
-            int j=1,row=0;
-            int testNumber= sc.nextInt();
-            int remainder=testNumber;
+            long j=1,row=0;
+            long testNumber= sc.nextLong();
+            long remainder=testNumber;
                 while(remainder>row)
                 {
                     remainder=remainder-j;
